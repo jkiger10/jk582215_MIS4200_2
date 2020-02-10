@@ -1,0 +1,57 @@
+﻿@model IEnumerable<jk582215_MIS4200_2.Models.PetOwner>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.petId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ownerFirstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ownerLastName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ownerEmail)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ownerPhone)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.petId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ownerFirstName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ownerLastName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ownerEmail)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ownerPhone)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ownerId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ownerId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ownerId })
+        </td>
+    </tr>
+}
+
+</table>
