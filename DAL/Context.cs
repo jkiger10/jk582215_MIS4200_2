@@ -8,7 +8,7 @@ namespace MIS4200jk582215.DAL
 {
     public class MIS4200Context : DbContext // inherits from DbContext
     {
-        public MIS4200Context() : base("new=DefaultConnection")
+        public MIS4200Context() : base("name=DefaultConnection")
         {
             // this method is a 'constructor' and is called when a new context is created
             // the base attribute says which connection string to use

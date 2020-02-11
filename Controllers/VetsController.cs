@@ -47,7 +47,7 @@ namespace jk582215_MIS4200_2.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "vetId,petId,vetFirstName,vetLastName")] Vet vet)
+        public ActionResult Create([Bind(Include = "vetId,vetFirstName,vetLastName")] Vet vet)
         {
             if (ModelState.IsValid)
             {
