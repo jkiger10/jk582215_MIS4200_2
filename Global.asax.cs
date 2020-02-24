@@ -5,6 +5,10 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
+using System.Data.Entity;
+using jk582215_MIS4200_2.Models;
+
+
 
 namespace jk582215_MIS4200_2
 {
@@ -16,6 +20,7 @@ namespace jk582215_MIS4200_2
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+            //Database.SetInitializer<MIS4200Context>(new DropCreateDatabaseIfModelChanges<MIS4200Context>());
         }
     }
 }

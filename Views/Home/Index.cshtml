@@ -14,25 +14,33 @@
             I am an extremely hardworking individual that puts 100% into all that I do. I am a fast learner and great with
             people. View the "contact" page to find my phone number and my email. Hope to get in touch soon!
         </p>
-        <p><a class="btn btn-default" href="https://www.linkedin.com/in/jordon-kiger">LinkedIn Profile &raquo;</a></p>
+        <p><a class="btn btn-lg" href="https://www.linkedin.com/in/jordon-kiger">LinkedIn Profile &raquo;</a></p>
     </div>
     <div class="col-md-4">
         <h2>Involvment On Campus</h2>
         <p>
             I am currently on the sailing team which is super fun and I would reccomend anyone to join if you are a student at OU.
             I am also an At-Large Senator and the Public Relations Director for Student Senate.<br />
-            @Html.ActionLink("Pet Owner", "Index", "PetOwners") <br />
-            @Html.ActionLink("Pets", "Index", "Pets") <br />
-            @Html.ActionLink("Vets", "Index", "Vets") <br />
+                                                                                               <div class="dropdown">
+                                                                                                   <button class="btn btn-primary dropdown-toggle btn-lg" type="button" data-toggle="dropdown">
+                                                                                                       Dropdown Example
+                                                                                                       <span class="caret"></span>
+                                                                                                   </button>
+                                                                                                   <ul class="dropdown-menu">
+                                                                                                       <li>@Html.ActionLink("Pet Owner", "Index", "PetOwners")</li>
+                                                                                                       <li>@Html.ActionLink("Pets", "Index", "Pets") </li>
+                                                                                                       <li> @Html.ActionLink("Vets", "Index", "Vets")</li>
+                                                                                                   </ul>
+                                                                                               </div>
 
 
         </p>
-        <p><a class="btn btn-default" href="https://www.ohiostudentsenate.com/">Student Senate Website &raquo;</a></p>
+        <p><a class="btn btn-lg" href="https://www.ohiostudentsenate.com/">Student Senate Website &raquo;</a></p>
     </div>
     <div class="col-md-4">
         <h2>Fun Facts</h2>
         <p>A couple of fun facts about myself is that I used to live in Florida where I was in a tropical storm which was a unique experience.
         I am also terrifed of horses.</p>
-        <p><a class="btn btn-default" href="https://en.wikipedia.org/wiki/Tropical_Storm_Fay_(2008)">Tropical Storm Fay &raquo;</a></p>
+        <p><a class="btn btn-lg" href="https://en.wikipedia.org/wiki/Tropical_Storm_Fay_(2008)">Tropical Storm Fay &raquo;</a></p>
     </div>
 </div>
