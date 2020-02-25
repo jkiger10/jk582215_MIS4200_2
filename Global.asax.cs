@@ -20,7 +20,6 @@ namespace jk582215_MIS4200_2
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
-            //Database.SetInitializer<MIS4200Context>(new DropCreateDatabaseIfModelChanges<MIS4200Context>());
         }
     }
 }

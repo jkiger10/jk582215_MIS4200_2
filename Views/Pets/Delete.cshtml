@@ -6,7 +6,10 @@
 
 <h2>Delete a Pet</h2>
 
-<h3>Are you sure you want to delete this?</h3>
+
+<div class="alert alert-warning">
+    <strong>Warning!</strong> This action is permanent. Are you sure you want to delete a pet?
+</div>
 <div>
     <h4>Pets</h4>
     <hr />
@@ -45,7 +48,8 @@
 
     </dl>
 
-    @using (Html.BeginForm()) {
+    @using (Html.BeginForm())
+    {
         @Html.AntiForgeryToken()
 
         <div class="form-actions no-color">

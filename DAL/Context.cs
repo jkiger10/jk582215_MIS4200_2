@@ -10,8 +10,7 @@ namespace MIS4200jk582215.DAL
     {
         public MIS4200Context() : base("name=DefaultConnection")
         {
-            // this method is a 'constructor' and is called when a new context is created
-            // the base attribute says which connection string to use
+            Database.SetInitializer(new MigrateDatabaseToLatestVersion<MIS4200Context,jk582215_MIS4200_2.Migrations.MISContext.Configuration>("DefaultConnection"));
         }
         // Include each object here. The value inside <> is the name of the class,
         // the value outside should generally be the plural of the class name
@@ -19,5 +18,10 @@ namespace MIS4200jk582215.DAL
         public DbSet<PetOwner> PetOwners { get; set; }
         public DbSet<Pets> Pets { get; set; }
         public DbSet<Vet> Vets { get; set; }
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+        }
     }
 }
